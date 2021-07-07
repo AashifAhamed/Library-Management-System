@@ -88,7 +88,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> {{ Auth::user()->name }}</span>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Aashif Ahamed</span>
                 <img class="img-profile rounded-circle" src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwidvcjos47hAhXCAnIKHe3wDV8QjRx6BAgBEAU&url=https%3A%2F%2Fwww.independent.co.uk%2Farts-entertainment%2Ffilms%2Fnews%2Fjohnny-depp-recalls-what-he-told-disney-bosses-confused-by-jack-sparrow-didnt-you-know-all-my-a6728081.html&psig=AOvVaw2lx775rse9i7Sr0OblkTxV&ust=1553091747218036">
               </a>
               <!-- Dropdown - User Information -->
@@ -106,16 +106,10 @@
                   Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="{{ route('logout') }}"
-                 onclick="event.preventDefault();
-                   document.getElementById('logout-form').submit();"   class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                   Logout
-                  </a>
-
-                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-               {{ csrf_field() }}
-                 </form>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
               </div>
             </li>
 
@@ -341,6 +335,9 @@
 </body>
 
 </html>
+
+
+<!-- Search Script -->
 <script>
 $(document).ready(function(){
 
@@ -394,6 +391,7 @@ $(document).ready(function(){
 });
 </script>
 
+     <!-- table 1 script -->
  <script type="text/javascript">
         function makeTableScroll() {
             // Constant retrieved from server-side via JSP
@@ -412,7 +410,7 @@ $(document).ready(function(){
         }
     </script>
 
-    
+     <!-- table 2 script -->
  <script type="text/javascript">
         function make2TableScroll() {
             // Constant retrieved from server-side via JSP
@@ -431,15 +429,18 @@ $(document).ready(function(){
         }
     </script>
     
+
+    <!-- alert script -->
     <script>
           $('div.alert').delay(2000).slideUp(300);
         </script>
 
- <style type="text/css">
-        table {
-            width:  100%;
-            border-collapse: collapse;
-        }
+<!-- popup style -->
+<style type="text/css">
+   table {
+    width:  100%;
+    border-collapse: collapse;
+   }
         td {
             border: 0px solid black;
         }
@@ -452,4 +453,4 @@ $(document).ready(function(){
                 cursor: pointer;transition: all .25s ease-in-out;
             }
             table tr:not(:first-child):hover{background-color: #ddd;}
-    </style>
+</style>

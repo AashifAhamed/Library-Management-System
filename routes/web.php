@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('dashboard');
 });
 
@@ -27,8 +27,7 @@ Route::get('/deleteBook/{id}', 'BookController@deleteBook');
 
 Route::post('/manageBooks/update/{id}', 'BookController@editBook');
 
-
-// from aashif
+// from aashif 
 
 Route::get('/borrow', 'BrwsAndRtnsController@index');
 
@@ -49,3 +48,4 @@ Route::get('/return', function () {
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+
